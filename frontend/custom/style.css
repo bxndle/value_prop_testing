@@ -12,6 +12,20 @@
   -o-transform: translateX(-50%);
 }
 
+#footer-logo {
+  height: 20px;
+
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+
+  transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+
 .buy-theme, .all-demo {
   display: none;
 }
