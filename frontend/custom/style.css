@@ -1,0 +1,67 @@
+#top-logo {
+  height: 20px;
+
+  position: absolute;
+  top: 20px;
+  left: 50%;
+
+  transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+
+.buy-theme, .all-demo {
+  display: none;
+}
+
+#box1 {
+  background-image: url('../images/mapsone.png');
+  background-size: contain;
+}
+
+#box2 {
+  background-image: url('../images/mapstwo.png');
+  background-size: contain;
+}
+
+#box3 {
+  background-image: url('../images/mapsthree.png');
+  background-size: contain;
+}
+
+#box4 {
+  background-image: url('../images/mapsfour.png');
+  background-size: contain;
+}
+
+#box5 {
+  background-image: url('../images/mapsfive.png');
+  background-size: contain;
+}
+
+#box6 {
+  background-image: url('../images/mapssix.png');
+  background-size: contain;
+}
+
+#platform-select {
+  color: white;
+  font-weight: 300;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-text-fill-color: #FAFAFA;
+  -webkit-box-shadow: 0 0 0 1000px #132472 inset !important;
+  transition: background-color 5000s ease-in-out 0s;
+}
