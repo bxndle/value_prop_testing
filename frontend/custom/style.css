@@ -30,6 +30,26 @@
   display: none;
 }
 
+#platform-select {
+  color: white;
+  font-weight: 300;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-text-fill-color: #FAFAFA;
+  -webkit-box-shadow: 0 0 0 1000px #132472 inset !important;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
 #box1 {
   background-image: url('../images/mapsone.png');
   background-size: contain;
@@ -60,22 +80,32 @@
   background-size: contain;
 }
 
-#platform-select {
-  color: white;
-  font-weight: 300;
+#box1-2 {
+  background-image: url('../images/dealsone.png');
+  background-size: contain;
 }
 
-input:-webkit-autofill,
-input:-webkit-autofill:hover,
-input:-webkit-autofill:focus
-input:-webkit-autofill,
-textarea:-webkit-autofill,
-textarea:-webkit-autofill:hover
-textarea:-webkit-autofill:focus,
-select:-webkit-autofill,
-select:-webkit-autofill:hover,
-select:-webkit-autofill:focus {
-  -webkit-text-fill-color: #FAFAFA;
-  -webkit-box-shadow: 0 0 0 1000px #132472 inset !important;
-  transition: background-color 5000s ease-in-out 0s;
+#box2-2 {
+  background-image: url('../images/dealstwo.png');
+  background-size: contain;
+}
+
+#box3-2 {
+  background-image: url('../images/dealsthree.png');
+  background-size: contain;
+}
+
+#box4-2 {
+  background-image: url('../images/dealsfour.png');
+  background-size: contain;
+}
+
+#box5-2 {
+  background-image: url('../images/dealsfive.png');
+  background-size: contain;
+}
+
+#box6-2 {
+  background-image: url('../images/dealssix.png');
+  background-size: contain;
 }

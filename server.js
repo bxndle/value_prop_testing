@@ -13,11 +13,18 @@ var routesApi = require('./backend/routes.js');
 
 app.use('/api', routesApi);
 
+app.all('/home', function(req, res) {
+    // Just send the index.html for other files to support HTML5Mode
+    res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
+    res.header('Access-Control-Allow-Origin', '*');
+    res.sendFile('/frontend/index2.html', { root: __dirname });
+});
+
 app.all('/*', function(req, res) {
     // Just send the index.html for other files to support HTML5Mode
     res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
     res.header('Access-Control-Allow-Origin', '*');
-    res.sendFile('/frontend/index.html', { root: __dirname });
+    res.sendFile('/frontend/index1.html', { root: __dirname });
 });
 
 // catch 404 and forward to error handler
