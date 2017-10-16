@@ -13,11 +13,11 @@ function urlencodeFormData(fd){
     return s;
 }
 
-var submitForm = function () {
+var submitForm = function (value) {
   var formElement = document.querySelector("#signup-form");
   var data = new FormData(formElement);
 
-  data.append('value_prop', '1');
+  data.append('value_prop', value.toString());
 
   var request = new XMLHttpRequest();
   request.open("POST", "/api/signup");
