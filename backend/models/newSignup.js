@@ -20,6 +20,10 @@ var NewSignupSchema = new mongoose.Schema({
   value_prop: {
     type: Number,
     required: true
+  },
+  joined: {
+    type: Date,
+    default: Date.now
   }
 });
 

@@ -29,21 +29,14 @@ var submitForm = function (value) {
 }
 
 var submitEmail = function (value) {
-  var formElement = document.querySelector("#signup-form");
-  var data = new FormData(formElement);
-
-  data.append('value_prop', value.toString());
-
-  data.append('name', '_');
-  data.append('ig_handle', '_');
-  data.append('platform', '_');
-
+  var email = document.querySelector("#email-signup-form").elements[0].value;
+  var url = '/api/justemail/' + email + '/' + value.toString();
 
   var request = new XMLHttpRequest();
-  request.open("POST", "/api/signup");
+  request.open("GET", url);
   request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 
-  request.send(urlencodeFormData(data));
+  request.send();
 
   location.reload();
 }
