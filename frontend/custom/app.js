@@ -28,6 +28,26 @@ var submitForm = function (value) {
   location.reload();
 }
 
+var submitEmail = function (value) {
+  var formElement = document.querySelector("#signup-form");
+  var data = new FormData(formElement);
+
+  data.append('value_prop', value.toString());
+
+  data.append('name', '_');
+  data.append('ig_handle', '_');
+  data.append('platform', '_');
+
+
+  var request = new XMLHttpRequest();
+  request.open("POST", "/api/signup");
+  request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+
+  request.send(urlencodeFormData(data));
+
+  location.reload();
+}
+
 var button = document.getElementById('submit-button');
 button.addEventListener(
   'click',

@@ -92,10 +92,20 @@
                 <div class="slider-typography text-left">
                     <div class="slider-text-middle-main">
                         <div class="slider-text-middle">
-                            <div class="col-lg-7 col-md-10 col-sm-10 center-col text-center">
-                                <span class="after-before-separator text-extra-small alt-font text-white letter-spacing-3 xs-letter-spacing-0 text-uppercase margin-20px-bottom xs-margin-5px-bottom display-inline-block">Beta Launch is Coming Soon</span>
-                                <h3 class="font-weight-500 text-white alt-font margin-40px-bottom xs-margin-25px-bottom">Always have a place to shoot.</h3>
-                                <a href="#contact-section" class="inner-link btn btn-transparent-white btn-rounded btn-medium text-link-white">Join Our Beta</a>
+                            <div class="col-lg-10 col-md-10 col-sm-10 center-col text-center">
+                                <span class="after-before-separator text-extra-small alt-font text-white letter-spacing-3 xs-letter-spacing-0 text-uppercase margin-20px-bottom xs-margin-5px-bottom display-inline-block">Launching soon</span>
+                                <h4 class="font-weight-500 text-white alt-font margin-40px-bottom xs-margin-25px-bottom">Stop losing track of the best photo ops!</h4>
+                                <h6 class="font-weight-500 text-white alt-font margin-40px-bottom xs-margin-25px-bottom">Save inspirations to Bundle's map and keep track of everytihng in one place.</h6>
+
+                                <form id="signup-form" action="javascript:submitEmail(1)" method="post">
+                                    <div class="row">
+                                        <div class="col-md-8 center-col input-border-white text-center">
+                                            <div id="success-contact-form" class="no-margin-lr"></div>
+                                            <input type="email" name="email" id="email" placeholder="E-mail *" class="input-border-bottom border-white-light" required>
+                                            <button id="submit-button" type="submit" class="btn btn-medium btn-transparent-white btn-rounded xs-margin-15px-top">Get early access</button>
+                                        </div>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>
@@ -103,24 +113,12 @@
             </div>
         </section>
         <!-- end hero section -->
-        <!-- start section -->
-        <section class="wow fadeIn color-code md-no-background-img" data-color="2" style="background: url('images/back-image1.png') left bottom no-repeat,url('images/back-image2.png') right top no-repeat">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-9 col-md-10 col-sm-10 col-xs-12 center-col text-center xs-padding-15px-lr">
-                        <div class="text-extra-small letter-spacing-3 alt-font text-white text-uppercase margin-70px-bottom sm-margin-50px-bottom xs-margin-30px-bottom display-inline-block">About Bundle</div>
-                        <h3 class="text-white alt-font width-95 sm-width-100 margin-70px-bottom sm-no-margin-bottom">Browse awesome photos and videos taken in Toronto and save your favourite spots to a map.</h3>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- end section -->
         <!-- start portfolio section -->
         <section class="wow fadeIn color-code no-padding xs-padding-50px-tb" data-color="3">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-9 col-sm-10 col-xs-12 center-col text-center">
-                        <div class="text-extra-small letter-spacing-3 alt-font text-white text-uppercase margin-70px-bottom sm-margin-50px-bottom xs-margin-30px-bottom display-inline-block">Our Community</div>
+                        <div class="text-extra-small letter-spacing-3 alt-font text-white text-uppercase margin-70px-bottom sm-margin-50px-bottom xs-margin-30px-bottom display-inline-block">Examples from toronto</div>
                     </div>
                 </div>
                 <div class="row">
@@ -222,22 +220,22 @@
                 <div class="row text-center">
                     <!-- start client logo item -->
                     <div class="col-md-3 col-sm-3 col-xs-12 margin-three-bottom xs-margin-15px-bottom wow fadeInDown">
-                        <a href="https://envato.com" target="_blank"><img src="images/logo1.png" alt=""></a>
+                        <a target="_blank"><img src="images/logo1.png" alt=""></a>
                     </div>
                     <!-- end client logo item -->
                     <!-- start client logo item -->
                     <div class="col-md-3 col-sm-3 col-xs-12 margin-three-bottom xs-margin-15px-bottom wow fadeInDown" data-wow-delay="0.2s">
-                        <a href="https://woocommerce.com" target="_blank"><img src="images/logo2.png" alt=""></a>
+                        <a target="_blank"><img src="images/logo2.png" alt=""></a>
                     </div>
                     <!-- end client logo item -->
                     <!-- start client logo item -->
                     <div class="col-md-3 col-sm-3 col-xs-12 margin-three-bottom xs-margin-15px-bottom wow fadeInDown" data-wow-delay="0.4s">
-                        <a href="https://magento.com" target="_blank"><img src="images/logo3.png" alt=""></a>
+                        <a target="_blank"><img src="images/logo3.png" alt=""></a>
                     </div>
                     <!-- end client logo item -->
                     <!-- start client logo item -->
                     <div class="col-md-3 col-sm-3 col-xs-12 margin-three-bottom xs-margin-15px-bottom wow fadeInDown" data-wow-delay="0.6s">
-                        <a href="https://lesscss.org" target="_blank"><img src="images/logo4.png" alt=""></a>
+                        <a target="_blank"><img src="images/logo4.png" alt=""></a>
                     </div>
                     <!-- end client logo item -->
                 </div>
@@ -252,7 +250,7 @@
                         <div class="text-extra-small letter-spacing-3 alt-font text-white text-uppercase margin-70px-bottom sm-margin-50px-bottom xs-margin-30px-bottom display-inline-block">Sign up for our beta and we'll be in touch soon!</div>
                     </div>
                 </div>
-                <form id="signup-form" action="javascript:submitForm(1)" method="post">
+                <form id="signup-form" action="javascript:submitForm(3)" method="post">
                     <div class="row">
                         <div class="col-md-8 center-col input-border-white text-center">
                             <div id="success-contact-form" class="no-margin-lr"></div>
@@ -268,7 +266,7 @@
                               </select>
                             </div>
                             <br>
-                            <button id="submit-button" type="submit" class="btn btn-very-small btn-transparent-white xs-margin-15px-top">join beta</button>
+                            <button id="submit-button" type="submit" class="btn btn-very-small btn-transparent-white btn-rounded xs-margin-15px-top">Get early access</button>
                         </div>
                     </div>
                 </form>
