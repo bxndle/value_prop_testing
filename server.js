@@ -27,6 +27,13 @@ app.all('/home', function(req, res) {
     res.sendFile('/frontend/index2.html', { root: __dirname });
 });
 
+app.all('/privacy', function(req, res) {
+    // Just send the index.html for other files to support HTML5Mode
+    res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
+    res.header('Access-Control-Allow-Origin', '*');
+    res.sendFile('/frontend/privacy.html', { root: __dirname });
+});
+
 app.all('/*', function(req, res) {
     // Just send the index.html for other files to support HTML5Mode
     res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');

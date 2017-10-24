@@ -35,6 +35,19 @@
   color: rgb(100, 100, 100);
 }
 
+#privacy-statement {
+  color: #bcbcbc;
+  margin-top: -15px;
+  margin-bottom: 15px;
+}
+
+#privacy-statement span a {
+  color: #f7dede;
+}
+#privacy-statement span a:hover {
+  color: white;
+}
+
 #platform-select {
   color: white;
   font-weight: 300;
