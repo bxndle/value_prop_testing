@@ -15,8 +15,8 @@ body {
 
 #overview {
   background-color: rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
-  padding: 5px;
+  border-radius: 10px;
+  padding: 10px;
 }
 
 #overview h4 {
